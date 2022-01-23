@@ -1,86 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Movee - квартирные переезды</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0=">
+    <meta name="author" content="HelWorld">
+    <meta http-equiv="Сache-Сontrol" content="max-age=2419200, must-revalidate"> <!-- 1 month -->
+    <meta name="robots" content="follow,noindex">
+    <meta name="theme-color" content="red">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" as="font">
+    <link rel="preload" href="assets/fonts/fontello.woff2?86098140" as="font">
 </head>
 <body>
     <!-- Slider -->
-    <div class="autopark__slider">
-        <button class="autopark__arrow autopark__arrow-left"></button>
-        <div class="autopark__content">
-            <div class="autopark__item autopark__item-1">
-                <div class="autopark__specifications">
-                    <h4>Газель 3 метра</h4>
-                    <div>
-                        <p>Ширина 2 м</p>
-                        <p>Высота 2 м</p>
-                        <p>Объем 16 м³</p>
-                        <p>Грузоподъемность 1,5 т</p>
-                    </div>
-                    <a href="" class="btn-order autopark__btn-order">Заказать</a>
-                </div>
-                <img src="assets/img/truck.jpg" class="autopark__img" alt="">
+    <div class="autopark" name="autopark">
+            <div class="autopark__header">
+                <h2 class="autopark__title title">Автопарк</h2>
+                <p class="autopark__description description">10 видов автомобилей от 800 кг до 10 тонн</p>
+                <ul class="autopark__list">
+                    <a href="#autopark" class="basic__20px">Газели</a>
+                    <a href="#autopark" class="basic__20px">Каблуки</a>
+                    <a href="#autopark" class="basic__20px">Грузовики</a>
+                </ul>
             </div>
-            <div class="autopark__item autopark__item-2 hide_item">
-                <div class="autopark__specifications">
-                    <h4>Газель 4 метра</h4>
-                    <div>
-                        <p>Ширина 2 м</p>
-                        <p>Высота 2 м</p>
-                        <p>Объем 16 м³</p>
-                        <p>Грузоподъемность 1,5 т</p>
+            <div class="autopark__body">
+                <div class="autopark__slider">
+                    <button class="autopark__arrow autopark__arrow-left basic__18px"></button>
+                    <div class="autopark__content">
+                        <div class="autopark__item autopark__item-1">
+                            <div class="autopark__specifications">
+                                <h4>Газель 3 метра</h4>
+                                <div class='autopark__text'>
+                                    <p class='basic__16px'>Ширина 2 м</p>
+                                    <p class='basic__16px'>Высота 2 м</p>
+                                    <p class='basic__16px'>Объем 16 м³</p>
+                                    <p class='basic__16px'>Грузоподъемность 1,5 т</p>
+                                </div>
+                                <p class='autopark__text-hide'>Газель 3 метра / 1,5 тонны</p>
+                                <div class="autopark__slider-mobile">
+                                    <button class="autopark__circle autopark__circle-1"></button>
+                                    <button class="autopark__circle autopark__circle-2"></button>
+                                    <button class="autopark__circle autopark__circle-3"></button>
+                                    <button class="autopark__circle autopark__circle-4"></button>
+                                    <button class="autopark__circle autopark__circle-5"></button>
+                                </div>
+                                <a href="" class="btn-order autopark__btn-order">Заказать</a>
+                            </div>
+                            <img src="assets/img/truck.jpg" class="autopark__img" alt="">
+                        </div>
+                        <div class="autopark__item autopark__item-2 hide_item">
+                            <div class="autopark__specifications">
+                                <h4>Газель 4 метра</h4>
+                                <div class='autopark__text'>
+                                    <p class='basic__16px'>Ширина 2 м</p>
+                                    <p class='basic__16px'>Высота 2 м</p>
+                                    <p class='basic__16px'>Объем 16 м³</p>
+                                    <p class='basic__16px'>Грузоподъемность 1,5 т</p>
+                                </div>
+                                <p class='autopark__text-hide'>Газель 4 метра / 1,5 тонны</p>
+                                <div class="autopark__slider-mobile">
+                                    <button class="autopark__circle autopark__circle-1"></button>
+                                    <button class="autopark__circle autopark__circle-2"></button>
+                                    <button class="autopark__circle autopark__circle-3"></button>
+                                    <button class="autopark__circle autopark__circle-4"></button>
+                                    <button class="autopark__circle autopark__circle-5"></button>
+                                </div>
+                                <a href="" class="btn-order autopark__btn-order">Заказать</a>
+                            </div>
+                            <img src="assets/img/truck.jpg" class="autopark__img" alt="">
+                        </div>
+                        <div class="autopark__item autopark__item-3 hide_item">
+                            <div class="autopark__specifications">
+                                <h4>Газель 5 метра</h4>
+                                <div class='autopark__text'>
+                                    <p class='basic__16px'>Ширина 2 м</p>
+                                    <p class='basic__16px'>Высота 2 м</p>
+                                    <p class='basic__16px'>Объем 16 м³</p>
+                                    <p class='basic__16px'>Грузоподъемность 1,5 т</p>
+                                </div>
+                                <p class='autopark__text-hide'>Газель 5 метра / 1,5 тонны</p>
+                                <div class="autopark__slider-mobile">
+                                    <button class="autopark__circle autopark__circle-1"></button>
+                                    <button class="autopark__circle autopark__circle-2"></button>
+                                    <button class="autopark__circle autopark__circle-3"></button>
+                                    <button class="autopark__circle autopark__circle-4"></button>
+                                    <button class="autopark__circle autopark__circle-5"></button>
+                                </div>
+                                <a href="" class="btn-order autopark__btn-order">Заказать</a>
+                            </div>
+                            <img src="assets/img/truck.jpg" class="autopark__img" alt="">
+                        </div>
+                        <div class="autopark__item autopark__item-4 hide_item">
+                            <div class="autopark__specifications">
+                                <h4>Газель 6 метра</h4>
+                                <div class='autopark__text'>
+                                    <p class='basic__16px'>Ширина 2 м</p>
+                                    <p class='basic__16px'>Высота 2 м</p>
+                                    <p class='basic__16px'>Объем 16 м³</p>
+                                    <p class='basic__16px'>Грузоподъемность 1,5 т</p>
+                                </div>
+                                <p class='autopark__text-hide'>Газель 6 метра / 1,5 тонны</p>
+                                <div class="autopark__slider-mobile">
+                                    <button class="autopark__circle autopark__circle-1"></button>
+                                    <button class="autopark__circle autopark__circle-2"></button>
+                                    <button class="autopark__circle autopark__circle-3"></button>
+                                    <button class="autopark__circle autopark__circle-4"></button>
+                                    <button class="autopark__circle autopark__circle-5"></button>
+                                </div>
+                                <a href="" class="btn-order autopark__btn-order">Заказать</a>
+                            </div>
+                            <img src="assets/img/truck.jpg" class="autopark__img" alt="">
+                        </div>
+                        <div class="autopark__item autopark__item-5 hide_item">
+                            <div class="autopark__specifications">
+                                <h4>Газель 7 метра</h4>
+                                <div class='autopark__text'>
+                                    <p class='basic__16px'>Ширина 2 м</p>
+                                    <p class='basic__16px'>Высота 2 м</p>
+                                    <p class='basic__16px'>Объем 16 м³</p>
+                                    <p class='basic__16px'>Грузоподъемность 1,5 т</p>
+                                </div>
+                                <p class='autopark__text-hide'>Газель 7 метра / 1,5 тонны</p>
+                                <div class="autopark__slider-mobile">
+                                    <button class="autopark__circle autopark__circle-1"></button>
+                                    <button class="autopark__circle autopark__circle-2"></button>
+                                    <button class="autopark__circle autopark__circle-3"></button>
+                                    <button class="autopark__circle autopark__circle-4"></button>
+                                    <button class="autopark__circle autopark__circle-5"></button>
+                                </div>
+                                <a href="" class="btn-order autopark__btn-order">Заказать</a>
+                            </div>
+                            <img src="assets/img/truck.jpg" class="autopark__img" alt="">
+                        </div>
                     </div>
-                    <a href="" class="btn-order autopark__btn-order">Заказать</a>
+                    <button class="autopark__arrow autopark__arrow-right basic__18px"></button>
                 </div>
-                <img src="assets/img/truck.jpg" class="autopark__img" alt="">
-            </div>
-            <div class="autopark__item autopark__item-3 hide_item">
-                <div class="autopark__specifications">
-                    <h4>Газель 5 метра</h4>
-                    <div>
-                        <p>Ширина 2 м</p>
-                        <p>Высота 2 м</p>
-                        <p>Объем 16 м³</p>
-                        <p>Грузоподъемность 1,5 т</p>
-                    </div>
-                    <a href="" class="btn-order autopark__btn-order">Заказать</a>
-                </div>
-                <img src="assets/img/truck.jpg" class="autopark__img" alt="">
-            </div>
-            <div class="autopark__item autopark__item-4 hide_item">
-                <div class="autopark__specifications">
-                    <h4>Газель 6 метра</h4>
-                    <div>
-                        <p>Ширина 2 м</p>
-                        <p>Высота 2 м</p>
-                        <p>Объем 16 м³</p>
-                        <p>Грузоподъемность 1,5 т</p>
-                    </div>
-                    <a href="" class="btn-order autopark__btn-order">Заказать</a>
-                </div>
-                <img src="assets/img/truck.jpg" class="autopark__img" alt="">
-            </div>
-            <div class="autopark__item autopark__item-5 hide_item">
-                <div class="autopark__specifications">
-                    <h4>Газель 7 метра</h4>
-                    <div>
-                        <p>Ширина 2 м</p>
-                        <p>Высота 2 м</p>
-                        <p>Объем 16 м³</p>
-                        <p>Грузоподъемность 1,5 т</p>
-                    </div>
-                    <a href="" class="btn-order autopark__btn-order">Заказать</a>
-                </div>
-                <img src="assets/img/truck.jpg" class="autopark__img" alt="">
             </div>
         </div>
-        <button class="autopark__arrow autopark__arrow-right"></button>
-    </div>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap')
+@import 'fontello.css'
+
+/* SASS */
+/* basic */
+$first-color: #FED100
+$second-color: #FFFFFF
+$third-color: #333333
+
+*
+	margin: 0
+	padding: 0
+	font-family: 'Montserrat'
+	font-style: normal
+
+a
+	text-decoration: none
+
+button
+	text-decoration: none
+	background-color: $second-color
+	border: none
+	cursor: pointer
+
+nav
+	padding-top: 40px
+	background-color: $first-color
+.basic_30px
+	font-weight: 600
+	font-size: 30px
+	line-height: 37px
+.logo
+	text-transform: uppercase
+	color: $third-color
+.title
+	font-weight: 600
+	font-size: 30px
+	line-height: 37px
+.description
+	font-weight: 600
+	font-size: 24px
+	line-height: 29px
+.text
+	font-size: 16px
+	line-height: 130.4%
+	color: $third-color
+.btn-order
+	vertical-align: middle
+	text-align: center
+.btn-order_2
+	padding: 13px 64px
+	border: 1px solid $third-color
+	background: none
+.social
+	color: $third-color
+	&:before
+		margin-right: 10px
+		font-family: 'fontello'
+		font-size: 22px
+	&:nth-child(1):before
+		content: '\f16a'
+	&:nth-child(2):before
+		font-size: 17px
+		content: '\e803'
+	&:nth-child(3):before
+		font-size: 20px
+		content: '\f30e'
+	&:nth-child(4):before
+		content: '\f16d'
+.mail
+	display: block
+	font-size: 16px
+	line-height: 24px
+	color: $third-color
+.phone
+	font-weight: 600
+	font-size: 24px
+	color: #000
+.nav-panel_noactive
+	display: grid
+.basic__16px
+	font-weight: 500
+	font-size: 16px
+	line-height: 21px
+.basic__18px
+	font-weight: 500
+	font-size: 18px
+	line-height: 22px
+.basic__20px
+	font-weight: 500
+	font-size: 20px
+	line-height: 24px
+.basic__30px
+	font-weight: 600
+	font-size: 30px
+	line-height: 37px
+/* nav-panel menu */
+.nav-panel
+	&__body
+		display: flex
+		flex-direction: row
+		justify-content: space-evenly
+		align-items: center
+	&__menu
+		max-width: 882px
+		&-body
+			display: grid
+			grid-template-columns: 2fr 2fr 2fr 3fr 3fr
+	&__item
+		display: inline-block
+		color: $third-color
+	&__phone
+		font-weight: 600
+		font-size: 24px
+		color: #000
+.menu__btn
+	display: none
+	border: none
+	text-decoration: none
+	float: right
+	order: 1
+	z-index: 1000
+	background: none
+	&:before
+		content: '\e804'
+		font-family: "fontello"
+		font-style: normal
+		font-size: 30px
+/* block "Home" */
+.home
+	background-color: $first-color
+	&__body
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+	&__content
+		display: flex
+		flex-direction: column
+		max-width: 546px	
+	&__title
+		margin-bottom: 50px
+		font-weight: bold
+		font-size: 70px
+		line-height: 126.9%
+		color: $third-color
+		& span
+			font-weight: 600
+			font-size: 30px
+			line-height: 37px
+	&__btn-order
+		position: relative
+		margin-top: 10px
+		max-width: 286.969px
+		max-height: 56px
+		border: 1px solid $second-color
+		color: $first-color
+		background: $first-color
+	&__btn-order_2
+		position: relative
+		padding: 16px 96px
+		margin-top: -45px
+		margin-left: -4%
+		z-index: 10000
+		border: none
+		color: $second-color
+		background: #FF352B
+	&__description
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		margin-top: 66px
+	&__item
+		display: grid
+		grid-template-columns: 1fr 2fr
+		align-items: center
+		color: $third-color
+	&__icons
+		display: block
+		max-width: 100%
+		width: 509px
+		&:after
+			position: absolute
+			top: 180px
+			display: block
+			max-width: 100%
+			width: inherit
+			height: 310px
+			content: ''
+			background: url('../img/home__icon_2.png') no-repeat
+			background-position: center center
+			background-size: cover
+	&__icon
+		position: relative
+		margin-bottom: -3px
+		z-index: 1000
+	&__phone
+		margin-top: 420px
+		padding: 24px
+		background-color: rgba(61, 155, 233, 0.8)
+		border: none
+		border-radius: 50%
+		box-shadow: 0 0 0 18px rgba(61, 155, 233, 0.3)
+		&:before
+			content: url(../img/phone.png)
+/* process block */
+.process
+	text-align: left
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	flex-wrap: wrap
+	align-items: center
+	align-content: center
+	color: $third-color
+	h2
+		margin-top: 95px
+		margin-bottom: 60px
+	&__body
+		display: grid
+		justify-content: center
+		grid-template-columns: 40% 45%
+		grid-column-gap: 23vw
+		grid-row-gap: 50px 
+	&__item
+		&:before
+			display: inline-block
+			height: 90px
+			position: relative
+			float: left
+			margin-right: 10%
+			content: ''
+			font-family: Montserrat
+			font-style: normal
+			font-weight: 300
+			font-size: 40px
+			line-height: 61px
+		&:first-child
+			display: inline-block
+			color: #000
+			&:before
+				content: '01'
+		&:nth-child(2)
+			display: inline-block
+			color: $third-color
+			&:before
+				content: '02'
+		&:nth-child(3)
+			display: inline-block
+			color: $third-color
+			&:before
+				margin-right: 7%
+				content: '03'
+		&:last-child
+			display: inline-block
+			color: $third-color
+			&:before
+				margin-right: 9%
+				content: '04'
+		h3
+			
+		p
+			font-size: 13px
+			line-height: 21px
+			color: $third-color
+/* block "Price" */
+.price
+	display: flex
+	justify-content: center
+	flex-direction: column
+	text-align: center
+	&__header
+		margin-top: 104px 
+	&__title 
+	&__description
+		margin-top: 15px
+		margin-bottom: 60px
+	&__body
+		display: flex
+		justify-content: space-around
+	&__item
+		text-align: center
+		padding: 42px 44px 39px 44px
+		border: 1px solid #808080
+		&:hover, &:focus, &:active
+			border: 1px solid $first-color
+		& h4
+			margin-bottom: 60px
+			font-weight: 600
+			font-size: 20px
+			line-height: 29px
+		& p
+			font-size: 12px
+			line-height: 21px
+		& h3
+			margin-top: 60px
+			margin-bottom: 52px
+	&__btn-order
+		padding: 14px 77px
+		background-color: $first-color
+		border: 0
+		cursor: pointer
+		color: $third-color
+	&__footer
+		display: none
+/* block "Autopark" */
+.autopark
+	display: flex
+	justify-content: center
+	flex-direction: column
+	text-align: center
+	&__header
+		margin-top: 102px
+	&__title
+	&__description
+		margin-top: 15px
+	&__list
+		margin-top: 60px
+		margin-left: 25%
+		margin-right: 25%
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-direction: row
+		text-align: center
+		a
+			padding: 13px 64px
+			border: 1px solid #EBEBEB
+			color: $third-color
+			&:hover,
+			&:focus,
+			&:active
+				border: 1px solid $first-color
+	&__body
+		margin-top: 47px
+		display: flex
+		justify-content: center
+		flex-direction: row
+		align-items: center
+	&__slider
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__arrow
+		padding: 15px
+		font-family: 'fontello'
+		font-size: 18px
+		color: #000
+	&__arrow-left
+		margin-right: 96px
+		&:after
+			content: '\e800'
+	&__arrow-right
+		margin-left: 96px
+		&:after
+			content: '\e801'
+	&__item
+		display: flex
+		justify-content: center
+		flex-direction: row
+		align-items: flex-start
+		text-align: left
+		img
+			max-width: 100%
+			width: 100%
+			min-width: 321px
+	&__specifications
+		margin-top: 50px
+		display: flex
+		justify-content: flex-start
+		flex-direction: column
+		h4
+			margin-bottom: 37px
+			font-weight: 600
+			font-size: 24px
+			line-height: 29px
+			color: $third-color
+			color: $third-color
+		p
+			&:before
+				margin-right: 15.57px
+				font-family: 'fontello'
+				font-size: 18px
+				content: '\e805'
+	&__text
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 168px
+		&-hide
+			display: none
+	&__slider-mobile
+		display: none
+		flex-direction: row
+		justify-content: space-between
+		button
+			display: block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: #000
+			cursor: pointer
+			&:hover,
+			&:focus,
+			&:active
+				border: 1px solid $first-color
+	&__btn-order
+		margin-top: 35px
+		padding: 14px 77px
+		background-color: $first-color
+		border: 0
+		cursor: pointer
+		color: $third-color
+.hide_item
+	display: none
+/* block "Reviews" */
+.reviews
+	padding-bottom: 107px
+	margin-top: 130px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	color: $third-color
+	background-color: $first-color
+	&__header
+		margin-top: 100px
+		text-align: center
+	&__body
+		margin-top: 60px
+		display: flex
+		justify-content: space-around
+	&__item
+		&:first-child
+			max-width: 19.82%
+		&:nth-child(2)
+			max-width: 21.41%
+		&:last-child
+			max-width: 22%
+		h3
+			font-weight: 600
+			font-size: 24px
+			line-height: 29px
+	&__assessment
+		margin-top: 10px 
+	&__star
+		display: inline-block
+		font-family: 'fontello'
+		font-size: 18px
+		color: #E5E5E5
+		background: none
+		&:before
+			content: '\e802'
+	&__star-active
+		color: #FF352B
+	&__content
+		margin-top: 20px
+		p
+			font-weight: 100
+			font-size: 14px
+			line-height: 21px
+	&__item:first-child
+		p
+			margin-bottom: 18px
+	&__item:nth-child(2)
+		p
+			margin-bottom: 38px
+	&__item:last-child
+		p
+			margin-bottom: 32px
+	&__read-full
+		color: $third-color
+		border-bottom: 1px solid $third-color
+	&__footer
+		margin-top: 72px
+		text-align: center
+/* block "Intermediate" */
+.intermediate
+	padding-top: 124px
+	padding-bottom: 124px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	&__content
+		margin-left: 15%
+		margin-right: 15%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__description
+		margin-top: 10px
+	&__form
+		margin-top: 47px
+		width: 100%
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		input[type='text']
+			max-height: 34px
+			margin-right: 20%
+			padding-bottom: 10px
+			border: none
+			border-bottom: 1px solid $third-color
+	&__call-me
+		position: relative
+		max-width: 280px
+		max-height: 56px
+		border: 1px solid $first-color
+		color: $second-color
+		background: $second-color
+	&__call-me_2
+		position: relative
+		padding: 13px 43px
+		margin-top: -35px
+		margin-left: -1%
+		z-index: 10000
+		border: none
+		color: $second-color
+		background: #FF352B
+	input[type='checkbox']
+		&:checked,
+		&:not(:checked)
+			position: absolute
+		&:checked + label, 
+		&:not(:checked) + label
+			display: inline-block
+			position: relative
+			padding-left: 28px
+			cursor: pointer
+		&:checked:before,
+		&:not(:checked):before
+			content: ""
+			position: absolute
+			left: 0px
+			top: 0px
+			width: 18px
+			height: 18px
+			border: 1px solid #dddddd
+			background-color: #ffffff
+		&:checked:after
+			content: ""
+			position: absolute
+			-webkit-transition: all 0.2s ease
+			-moz-transition: all 0.2s ease
+			-o-transition: all 0.2s ease
+			transition: all 0.2s ease
+			left: 3px
+			top: 4px
+			width: 10px
+			height: 5px
+			border-radius: 1px
+			border-left: 4px solid #000
+			border-bottom: 4px solid #000
+			transform: rotate(-45deg)
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+	label
+		font-size: 12px
+		line-height: 15px
+		letter-spacing: 0.015em
+/* block "Map" */
+#map
+	display: block
+	width: 100%
+	height: 666px
+.map
+	&__content
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 163px
+		padding: 14px 11.5px
+		border: 0px solid #000
+	&__title
+		text-transform: uppercase
+	&__info
+		margin-top: 40px
+	&__item
+		display: block
+		color: $third-color
+		&:before
+			margin-right: 15.57px
+			font-family: 'fontello'
+			font-size: 18px
+			content: '\e805'
+			color: $first-color
+	&__social-network
+		margin-top: 27px
+		display: flex
+		justify-content: flex-end
+		align-items: center
+	&__footer
+		display: none
+/* footer */
+.footer
+	padding: 100px 0px
+	display: flex
+	justify-content: space-evenly
+	align-items: center
+	background-color: $first-color
+	&__item
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		&:nth-child(1)
+			min-height: 199px
+		&:nth-child(2)
+			min-height: 180px
+		&:nth-child(3)
+			min-height: 199px
+		&:nth-child(4)
+			text-align: center
+			min-height: 199px
+	&__social-network
+		display: flex
+		justify-content: space-between
+		vertical-align: top
+		align-items: center
+	&__body
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+.footer-panel
+	&__body
+		display: flex
+		flex-direction: row
+		justify-content: space-evenly
+		align-items: center
+	&__menu
+		max-width: 882px
+		&-body
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			min-height: 180px
+	&__item
+		display: inline-block
+		color: $third-color
+	&__phone
+		font-weight: 600
+		font-size: 24px
+		color: #000
+@media screen and (max-width: 1024px)
+	/* nav-panel */
+	nav
+		padding-top: 27px
+	.nav-panel
+		&__body
+			justify-content: space-between
+			margin-left: 2%
+			margin-right: 2%
+		&__logo
+			font-size: 16px
+			line-height: 27px
+		&__menu
+			position: fixed
+			right: 2%
+			top: 27px
+			text-align: right
+			&-body
+				margin-top: 40px
+				display: grid
+				grid-template-columns: 1fr 
+		&__item
+			font-size: 12px
+			line-height: 27px
+		&__phone
+			font-size: 16px
+			line-height: 27px
+	.menu__btn
+		display: block
+	.hide_menu
+		display: none
+	/* block "Home" */
+	.home
+		background-color: $first-color
+		&__body
+			flex-direction: column
+			margin-left: 5%
+			margin-right: 5%
+		&__content
+			text-align: center
+			order: 1001
+			& header
+				max-width: 286.969px
+		&__title
+			font-size: 28px
+			line-height: 131.9%
+			& span
+				font-size: 18px
+				line-height: 22px
+		&__description
+			display: none
+		&__icons
+			text-align: center
+			order: 1000
+			&:after
+				display: none
+		&__icon
+			display: inline-block
+			max-width: 100%
+			width: 248px
+			height: 396px
+			position: relative
+			z-index: 1000
+			margin-bottom: -3px
+		&__contacts 
+		&__phone
+			display: none
+	/* block "Process" */
+	.process
+		h2
+			font-size: 20px
+			line-height: 24px
+			margin-top: 40px
+			margin-bottom: 40px
+		&__body
+			display: grid
+			grid-template-columns: 100%
+			grid-column-gap: 23vw
+			grid-row-gap: 10px
+		&__item
+			&:before
+				top: -15px
+				text-shadow: none
+				font-size: 50px
+			h3
+				font-size: 12px
+				line-height: 129.9%
+			p
+				display: none
+	/* block "Price" */
+	.price
+		&__header
+			margin-top: 104px 
+		&__title
+			font-style: normal
+			font-weight: 600
+			font-size: 20px
+			line-height: 24px
+		&__description
+			display: none
+		&__body
+			justify-content: center
+		&__item
+			padding: 0
+			border: none
+			&:first-child,
+			&:last-child
+				display: none
+			&:nth-child(2)
+				padding: 40px 0px 40px 0px // 114px
+			& h4
+				margin-bottom: 24px
+				font-style: normal
+				font-weight: 500
+				font-size: 16px
+				line-height: 22px
+			& p
+				font-size: 12px
+				line-height: 21px
+			& h3
+				font-style: normal
+				font-weight: 500
+				font-size: 26px
+				line-height: 37px
+		&__btn-order
+			padding: 18px 100px
+		&__footer
+			display: block
+		&__link
+			font-family: Montserrat
+			font-style: normal
+			font-weight: 500
+			font-size: 16px
+			line-height: 131.4%
+			color: $third-color
+			border-bottom: 1px solid $third-color
+	/* block "Autopark" */
+	.autopark
+		&__title
+			font-size: 20px
+			line-height: 24px
+		&__description 
+			display: none
+		&__list
+			margin-left: 5%
+			margin-right: 0
+			a
+				padding: 0px 0px
+				font-weight: 500
+				font-size: 16px
+				line-height: 20px
+				border: none
+				color: $third-color
+				&:hover,
+				&:focus,
+				&:active
+					border: none
+					border-bottom: 1px solid $first-color
+		&__body
+			flex-direction: column 
+		&__arrow
+			display: none
+		&__content
+			flex-direction: column
+		&__item
+			text-align: center
+			align-items: center
+			flex-direction: column
+			img
+				order: 1
+		&__specifications
+			order: 2
+			flex-direction: column
+			h4
+				display: none
+			p
+				font-size: 12px
+				line-height: 15px
+				&:before
+					content: ''
+		&__text
+			display: none
+			&-hide
+				display: block
+		&__slider-mobile
+			margin-top: 30px
+			display: flex
+		&__btn-order
+			font-size: 20px
+			line-height: 24px
+	/* block "Reviews" */
+	.reviews
+		&__header
+			margin-top: 40px 
+		&__title
+			font-weight: 600
+			font-size: 20px
+			line-height: 24px
+		&__body
+			justify-content: space-evenly
+			margin-top: 40px
+		&__item
+			&:first-child,
+			&:last-child
+				display: none
+			&:nth-child(2)
+				min-width: 281px
+			h3
+				font-size: 18px
+				line-height: 22px
+		&__time
+			font-size: 14px
+			line-height: 21px 
+		&__star
+			font-size: 16px 
+		&__content
+			p
+				font-size: 14px
+				line-height: 21px
+		&__read-full
+			margin-top: 15px 
+			font-size: 16px
+			line-height: 131.4%
+		&__footer
+			margin-top: 63px
+		&__all-reviews
+			font-size: 20px
+			line-height: 24px
+	/* block "Intermediate" */
+	.intermediate
+		padding-top: 62px
+		padding-bottom: 62px
+		text-align: center
+		&__content
+			margin-left: 5%
+			margin-right: 5%
+		&__title
+			font-weight: 600
+			font-size: 20px
+			line-height: 24px
+			text-align: center
+		&__description
+			font-size: 15px
+			line-height: 131.4%
+		&__form
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			input[type='text']
+				margin-right: 0
+				&:nth-child(2)
+					margin-top: 40px
+					margin-bottom: 60px
+			span
+				text-align: left
+		&__call-me_2
+			font-family: 'Montserrat'
+			font-style: normal
+			font-weight: 500
+			font-size: 20px
+			line-height: 24px
+		input[type='checkbox']
+	/* block "Map" */
+	.map
+		&__footer
+			display: block
+		&__info
+			margin-left: 10%
+			margin-right: 10%
+		&__item
+			&:before
+				margin-right: 0
+				content: ''
+	/* footer */
+	.footer
+		flex-direction: column
+		text-align: center
+		justify-content: space-between
+		min-height: 614px
+		&__item
+			&:nth-child(1)
+				min-height: 173px
+			&:nth-child(2)
+				min-height: 180px
+			&:nth-child(3)
+				min-height: 62px
+			&:nth-child(4)
+				text-align: center
+				min-height: 106px
